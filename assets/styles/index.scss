@@ -1,12 +1,17 @@
 @import '~bootstrap/scss/bootstrap';
-@import '../fonts.finalnew.tff';
-@font-face {
-  font-family: 'final_frontierregular';
-  font-style:
-    url('finalnew-webfont.woff2') format('woff2'),
-    url('finalnew-webfont.woff') format('woff');
+// removed trek webpack for now, will reinsert
+
+$background-color: #000;
+
+.modal-fade {
+  background-color: $background-color;
+  height: 100%;
+  opacity: 50%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
-.title {
-  font-family: 'final_frontierregular', Arial, sans-serif;
+.modal-title {
+  text-align: justify;
 }
