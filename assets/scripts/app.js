@@ -5,7 +5,11 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
+const loginModal = document.ready.getElementById(loginModal) {
+  show.bs.Modal
+}
 
 $(() => {
-  // your JS code goes here
+  // Open Modal to launch sign-in/registration screen
+  loginModal()
 })
