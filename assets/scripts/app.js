@@ -9,6 +9,13 @@
   show.bs.Modal
 }
 */
+// const closeModal = document.ready.getElementByClass('close')
+const $("launchModal") = document.querySelector('.btn btn-primary')
+const.
+console.log('code running')
+
 $(() => {
-  // Open Modal to launch sign-in/registration screen
+  $launchModal.addEventListener('click', function () {
+    document.getElementByClass('modal-fade').style.display = flex;
+  })
 })
