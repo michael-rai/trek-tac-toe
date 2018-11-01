@@ -10,12 +10,12 @@
 }
 */
 // const closeModal = document.ready.getElementByClass('close')
-const $("launchModal") = document.querySelector('.btn btn-primary')
-const.
-console.log('code running')
+// const events = require('./events')
 
 $(() => {
-  $launchModal.addEventListener('click', function () {
-    document.getElementByClass('modal-fade').style.display = flex;
-  })
+  const openModal = function () {
+    document.getElementById('loginModal').display('flex')
+  }
+  $('btn btn-primary launch').addEventListenter('click', openModal)
+  // $('loginFormModal').on('submit', events.onGetAllBooks)
 })
