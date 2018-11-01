@@ -28,20 +28,31 @@
               <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
             </div>
             <div class="modal-body">
-              <form class ="loginFormModal" role="form">
+
+              <form class ="SignUpFormModal" role="form">
                 <div class="form-group">
                 <label for="usrname">Username</label>
-                  <input type="text" class="form-control" id="usrname" placeholder="Enter your email">
+                  <input type="text" class="form-control" name="credentials[email]" placeholder="Enter your email">
                 </div>
                 <div class="form-group">
                   <label for="psw">Password</label>
-                  <input type="password" class="form-control" id="psw" placeholder="Enter your password">
+                  <input type="password" class="form-control" name="credentials[password]" placeholder="Enter your password">
+                  <input type="password" class="form-control" name="credentials[password_confirmation]" placeholder="confirm your password">
                 </div>
-            <div class="modal-footer">
               <button type="submit" class="btn btn-primary signup">Enlist!</button>
-              <button type="submit" class="btn btn-primary sign in">Take Off!</button>
-            </div>
             </form>
+
+            <form class ="loginFormModal" role="form">
+              <div class="form-group">
+              <label for="usrname">Username</label>
+                <input type="text" class="form-control" name="credentials[email]" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="psw">Password</label>
+                <input type="password" class="form-control" name="credentials[password]" placeholder="Enter your password">
+              </div>
+            <button type="submit" class="btn btn-primary sign in">Take Off!</button>
+          </form>
             </div>
             <div class="modal-footer">
               <h6>version 1.0</h6>
