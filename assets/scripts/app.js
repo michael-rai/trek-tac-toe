@@ -12,5 +12,10 @@ $(() => {
   console.log('loaded')
 //  $('#signUpFormModal').on('submit', events.onSignUp)
 //  $('#loginInFormModal').on('submit', events.onSignIn)
-//   $('#gameBoard')
+const grid = [
+[' ', ' ', ' ']
+[' ', ' ', ' ']
+[' ', ' ', ' '];
+
+$('.col').on('click',)
 })
