@@ -1,14 +1,30 @@
 @import '~bootstrap/scss/bootstrap';
 // removed trek webpack for now, will reinsert
 
-$background-color: #000;
+$title-color: #fff;
+
+.container {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.col {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
 
 .title {
+  color: $title-color;
+  text-align: center;
+}
+
+.btn {
   text-align: center;
 }
 
 .modal-fade {
-  background-color: $background-color;
   display: none;
   height: 100%;
   justify-content: center;

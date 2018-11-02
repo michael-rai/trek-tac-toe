@@ -5,17 +5,12 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
-/* const loginModal = document.ready.getElementById(loginModal) {
-  show.bs.Modal
-}
-*/
-// const closeModal = document.ready.getElementByClass('close')
+
 // const events = require('./events')
 
 $(() => {
-  const openModal = function () {
-    document.getElementById('loginModal').display('flex')
-  }
-  $('btn btn-primary launch').addEventListenter('click', openModal)
-  // $('loginFormModal').on('submit', events.onGetAllBooks)
+  console.log('loaded')
+//  $('#signUpFormModal').on('submit', events.onSignUp)
+//  $('#loginInFormModal').on('submit', events.onSignIn)
+//   $('#gameBoard')
 })

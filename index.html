@@ -12,13 +12,30 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
-    <body>
+    <body class="body" style="background-image:url(assets/pics/space_background.jpg)">
       <header>
 
       <h1 class='title'>Trek-Tac-Toe</h1>
 <!--review cod for labeling issue -->
-<button type="button" class="btn btn-primary btn-center" data-toggle="modal"
+<button type="button" class="btn btn-primary" data-toggle="modal"
       data-target="#exampleModal">Ready Warp Engines!</button>
+<div class="container">
+  <div class="row">
+    <div class="col">X</div>
+    <div class="col">o</div>
+    <div class="col">X</div>
+  </div>
+  <div class="row">
+    <div class="col">X</div>
+    <div class="col">o</div>
+    <div class="col">X</div>
+  </div>
+  <div class="row">
+    <div class="col">X</div>
+    <div class="col">o</div>
+    <div class="col">X</div>
+  </div>
+</div>
 
       <div class="modal fade" id="exampleModal">
         <div class="modal-dialog">
@@ -26,10 +43,11 @@
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Welcome To Starfleet!</h5>
               <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <h2 id="message1"></h2>
             </div>
             <div class="modal-body">
 
-              <form class ="SignUpFormModal" role="form">
+              <form class ="SignUp" id="SignUpFormModal"  role="form">
                 <div class="form-group">
                 <label for="usrname">Username</label>
                   <input type="text" class="form-control" name="credentials[email]" placeholder="Enter your email">
@@ -42,8 +60,9 @@
               <button type="submit" class="btn btn-primary signup">Enlist!</button>
             </form>
 
-            <form class ="loginFormModal" role="form">
+            <form class ="login" id="loginFormModal" role="form">
               <div class="form-group">
+                <h2 id="message2"></h2>
               <label for="usrname">Username</label>
                 <input type="text" class="form-control" name="credentials[email]" placeholder="Enter your email">
               </div>
