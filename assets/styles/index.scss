@@ -1,28 +1,42 @@
 @import '~bootstrap/scss/bootstrap';
-// removed trek webpack for now, will reinsert
+
+@font-face {
+  font-family: 'final_frontierregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/finalnew.tff');
+}
 
 $title-color: #fff;
 $background-color: #808080;
-$divcolor: rgba($background-color, .7);
+$divcolor: rgba($background-color, 0.7);
+$col-color: #fff;
 
 .container {
   background-color: $divcolor;
-  justify-content: center;
   margin-top: 30px;
 }
 
+.row {
+  justify-content: center;
+}
+
 .col {
+  border-style: outset;
   display: inline-block;
   font-size: 120px;
   height: 150px;
+  justify-content: center;
+  margin-bottom: 20px;
   margin-top: 20px;
   padding: 20px;
   text-align: center;
+  text-overflow: inherit;
   width: 150px;
 }
 
 .title {
-  color: $title-color;
+  font-family: 'final_frontierregular', serif;
   text-align: center;
 }
 

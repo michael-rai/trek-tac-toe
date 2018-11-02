@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Trek-Tac-Toe</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags-->
@@ -12,14 +12,13 @@
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
-    <body class="body" style="background-image:url(assets/pics/space_background.jpg)">
+    <body class="body">
       <header>
-
       <h1 class='title'>Trek-Tac-Toe</h1>
-<!--review cod for labeling issue
+<!--review cod for labeling issue -->
 <button type="button" class="btn btn-primary" data-toggle="modal"
       data-target="#exampleModal">Ready Warp Engines!</button>
-    -->
+
 <div class="container">
   <div class="row">
     <div class="col" data-i=0 data-j=0></div>
@@ -37,14 +36,14 @@
     <div class="col" data-i=2 data-j=2></div>
   </div>
 </div>
-<!--
+
 
       <div class="modal fade" id="exampleModal">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Welcome To Starfleet!</h5>
-              <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+              <button type="button" id="testToggle" class="close" data-dismiss="modal"><span>&times;</span></button>
               <h2 id="message1"></h2>
             </div>
             <div class="modal-body">
@@ -81,7 +80,7 @@
           </div>
         </div>
       </div>
-    -->
+
     </header>
     </body>
 </html>
