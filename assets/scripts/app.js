@@ -7,15 +7,26 @@
 // require('./example')
 
 // const events = require('./events')
+const userToken = 'X'
+// const oppToken = 'Y'
 
 $(() => {
   console.log('loaded')
-//  $('#signUpFormModal').on('submit', events.onSignUp)
-//  $('#loginInFormModal').on('submit', events.onSignIn)
-const grid = [
-[' ', ' ', ' ']
-[' ', ' ', ' ']
-[' ', ' ', ' '];
+  //  $('#signUpFormModal').on('submit', events.onSignUp)
+  //  $('#loginInFormModal').on('submit', events.onSignIn)
+  const grid = [
+    [' ', ' ', ' '],
+    [' ', ' ', ' '],
+    [' ', ' ', ' ']
+  ]
 
-$('.col').on('click',)
+  $('.col').click(function () {
+    $this = $(this);
+    $(this).html(userToken);
+    const i = $(this).data('i');
+    const j = $(this).data('j')
+    grid[i][j] = userToken;
+    console.log(grid);
+})
+
 })

@@ -2,8 +2,11 @@
 // removed trek webpack for now, will reinsert
 
 $title-color: #fff;
+$background-color: #808080;
+$divcolor: rgba($background-color, .7);
 
 .container {
+  background-color: $divcolor;
   justify-content: center;
   margin-top: 30px;
 }
