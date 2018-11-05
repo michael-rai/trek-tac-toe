@@ -7,7 +7,7 @@ const onSignUpFromApi = function (id) {
     data: createObject
   })
 }
-*/
+
 const config = require('./config.js')
 const store = require('./store.js')
 
@@ -53,3 +53,4 @@ module.exports = {
   signIn,
   createGame,
 }
+*/
