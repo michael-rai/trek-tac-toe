@@ -12,9 +12,38 @@ $background-color: #808080;
 $divcolor: rgba($background-color, 0.7);
 $col-color: #fff;
 
+.body {
+  background-image: url('assets/pics/stbg.jpg');
+}
+
 .container {
   background-color: $divcolor;
-  margin-top: 30px;
+  border-style: outset;
+  display: block;
+  float: center;
+  margin: 0 auto;
+}
+
+.score-keeper {
+  border-color: $divcolor;
+  border-style: outset;
+  display: block;
+  float: left;
+  height: 100px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.score-keeper2 {
+  border-color: $divcolor;
+  border-style: outset;
+  display: block;
+  float: right;
+  height: 100px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -24,19 +53,27 @@ $col-color: #fff;
 .col {
   border-style: outset;
   display: inline-block;
-  font-size: 120px;
-  height: 150px;
+  font-size: 100px;
+  height: 130px;
   justify-content: center;
   margin-bottom: 20px;
   margin-top: 20px;
   padding: 20px;
   text-align: center;
   text-overflow: inherit;
-  width: 150px;
+  width: 130px;
 }
 
 .title {
   font-family: 'final_frontierregular', serif;
+  text-align: center;
+}
+
+.btn-down {
+  display: block;
+  float: none;
+  justify-content: center;
+  padding: 10px;
   text-align: center;
 }
 
