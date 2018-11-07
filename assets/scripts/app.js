@@ -1,6 +1,7 @@
 'use strict'
 
 // const events = require('./events')
+
 const userToken = 'X'
 // const oppToken = 'Y'
 

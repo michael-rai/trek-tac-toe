@@ -7,13 +7,15 @@
   src: url('/finalnew.tff');
 }
 
-$title-color: #fff;
+$title-color: #c0c0c0;
 $background-color: #808080;
-$divcolor: rgba($background-color, 0.7);
+$divcolor: rgba($background-color, 0.4);
 $col-color: #fff;
+$modal-color: #000;
 
 .body {
   background-image: url('assets/pics/stbg.jpg');
+  background-size: cover;
 }
 
 .container {
@@ -25,25 +27,33 @@ $col-color: #fff;
 }
 
 .score-keeper {
+  background-image: url('assets/pics/stlogo.jpeg');
+  background-size: cover;
   border-color: $divcolor;
   border-style: outset;
+  color: $title-color;
   display: block;
   float: left;
-  height: 100px;
+  height: 300px;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  width: 300px;
 }
 
 .score-keeper2 {
+  background-image: url('assets/pics/picard.jpg');
+  background-size: cover;
   border-color: $divcolor;
   border-style: outset;
+  color: $title-color;
   display: block;
   float: right;
-  height: 100px;
+  height: 300px;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  width: 300px;
 }
 
 .row {
@@ -65,6 +75,7 @@ $col-color: #fff;
 }
 
 .title {
+  color: $title-color;
   font-family: 'final_frontierregular', serif;
   text-align: center;
 }
@@ -101,4 +112,8 @@ $col-color: #fff;
 
 .modal-title {
   text-align: justify;
+}
+
+.modal-content {
+  background-image: url('assets/pics/metalbg.jpg');
 }

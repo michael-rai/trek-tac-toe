@@ -4,6 +4,7 @@ const signUpSuccess = data => {
   $('#message1').text('Signed up successfully')
   $('#message1').removeClass()
   $('#message1').addClass('sucess')
+  // unhide game board, purge, and scorekeepers
   console.log('signUpSuccess ran. data is : ', data)
 }
 
@@ -19,6 +20,7 @@ const signInSuccess = data => {
   $('#message2').text('Signed in successful')
   $('#message2').removeClass()
   $('#message2').addClass('sucess')
+  // unhide game board, purge, and scorekeepers
   console.log('signInSuccess ran. data is : ', data)
 }
 
