@@ -1,6 +1,6 @@
 'use strict'
 
-// const events = require('./events')
+const events = require('./events')
 
 const userToken = 'X'
 // const oppToken = 'Y'
@@ -8,7 +8,7 @@ const userToken = 'X'
 $(() => {
   console.log('js is running')
   //  $('#signUpFormModal').on('submit', events.onSignUp)
-  //  $('#loginInFormModal').on('submit', events.onSignIn)
+  $('#loginInFormModal').on('submit', events.onSignIn)
 
   // the following code can be attributed to Cody Seibert via Youtube at https://www.youtube.com/watch?v=ra2_rKV0mDE
   const grid = [

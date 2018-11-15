@@ -6,23 +6,34 @@ const onSignUp = event => {
   console.log('success')
   event.preventDefault()
   const data = getFormFields(event.target)
-  // take this date and send to our server
+  // take this date and send to our server post to api must have token
   // using an http request
   api.signUp(data)
     .then(ui.signUpSuccess)
     .catch(ui.signUpFailure)
 }
 
-const onSignIn = event => {
-  console.log('success')
-  event.preventDefault()
-  const data = getFormFields(event.target)
-  // take this date and send to our server
-  // using an http request
-  api.signIn(data)
-    .then(ui.signInSuccess)
-    .catch(ui.signInFailure)
-}
+// // const onSignIn = event => {
+// //   console.log('success')
+// //   event.preventDefault()
+// //   const data = getFormFields(event.target)
+// //   // take this date and send to our server
+// //   const data = {
+// //     game: {
+// //       cell: {
+// //         index: celladata.cell.index
+// //         value: celladata.cell.value
+// //       }
+// //     },
+// //     over: false
+// //       }
+// //     }
+// //   }
+//   // using an http request
+//   api.signIn(data)
+//     .then(ui.signInSuccess)
+//     .catch(ui.signInFailure)
+// }
 module.export = {
   onSignUp,
   onSignIn

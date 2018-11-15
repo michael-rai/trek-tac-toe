@@ -1,24 +1,35 @@
-/* const baseUrl = 'http://tic-tac-toe.wdibos.com'
+const baseUrl = 'http://tic-tac-toe.wdibos.com'
 
 const onSignUpFromApi = function (id) {
   return $.ajax({
     url: baseUrl + `/sign-up/${id}`,
     method: 'POST',
-    data: createObject
+    data: {}
   })
 }
 
 const config = require('./config.js')
 const store = require('./store.js')
 
-const createGame = function (){
+const createGame = function () {
   return $.ajax({
     url: config.apiUrl + '/games',
     method: 'POST',
     headers: {
       Authorization: 'Token token' + store.user.token
     },
-    data: {},
+    data: {}
+  })
+}
+
+const patchMove = function () {
+  return $.ajax({
+    url: config.apiUrl + '/games/:id',
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Token token' + store.user.token
+    },
+    data: {}
   })
 }
 
@@ -27,13 +38,14 @@ const signUp = data => {
     url: config.apiUrl + '/sign-up',
     method: 'POST',
     data: {
-    "credentials": {
-      "email": `${EMAIL}`,
-      "password":`${PASSWORD}`,
+      'credentials': {
+        'credentials': `${EMAIL}`,
+        'password ': `${PASSWORD}`,
     }
   }
   }
   )
+}
 
 const signIn = data => {
   return $.ajax({
@@ -47,10 +59,12 @@ const signIn = data => {
   }
   }
   )
+}
 
 module.exports = {
+  onSignUpFromApi,
   signUp,
   signIn,
   createGame,
+  patchMove
 }
-*/
