@@ -2,9 +2,16 @@
 
 @font-face {
   font-family: 'final_frontierregular';
-  font-style: normal;
+  src: url('assets/styles/fonts/webfontkit-20181102-141357/finalnew.woff2') format('woff2'), url('assets/styles/fonts/webfontkit-20181102-141357/finalnew.woff') format('woff');
   font-weight: normal;
-  src: url('/finalnew.tff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'airborneregular';
+  src: url('assets/styles/fonts/webfontkit-airborne/airborne.woff2') format('woff2'), url('assets/styles/fonts/webfontkit-airborne/airborne.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 $title-color: #c0c0c0;
@@ -65,6 +72,7 @@ $modal-color: #000;
   background-color: black;
   border-style: solid;
   bottom: 0;
+  font-family: 'airborneregular', serif;
   padding: 5px;
   position: absolute;
   width: inherit;
@@ -91,6 +99,13 @@ $modal-color: #000;
 .title {
   color: $title-color;
   font-family: 'final_frontierregular', serif;
+  font-size: 100px;
+  text-align: center;
+}
+
+.subtitle {
+  color: $title-color;
+  font-family: 'final_frontierregular', serif;
   text-align: center;
 }
 
@@ -100,6 +115,12 @@ $modal-color: #000;
   justify-content: center;
   padding: 10px;
   text-align: center;
+}
+
+.btn {
+  border-radius: 25px;
+  // filter: blur(1px);
+  // opacity: 0.75;
 }
 
 .form-button {
