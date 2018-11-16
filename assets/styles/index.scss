@@ -19,42 +19,55 @@ $modal-color: #000;
 }
 
 .container {
+  animation: glow 1.5s infinite alternate;
   background-color: $divcolor;
   border-style: outset;
   display: block;
   float: center;
   margin: 0 auto;
-  width: 600px;
+  max-width: 450px;
 }
 
 .score-keeper {
   background-image: url('assets/pics/stlogo.jpeg');
-  background-size: cover;
+  background-size: auto;
   border-color: $divcolor;
   border-style: outset;
   color: $title-color;
   display: block;
   float: left;
-  height: 300px;
+  height: 330px;
   justify-content: center;
   margin-left: 25px;
   margin-right: auto;
-  width: 200px;
+  position: relative;
+  width: 250px;
 }
 
 .score-keeper2 {
   background-image: url('assets/pics/picard.jpg');
-  background-size: cover;
+  background-size: auto;
   border-color: $divcolor;
   border-style: outset;
   color: $title-color;
   display: block;
   float: right;
-  height: 300px;
+  height: 330px;
   justify-content: center;
   margin-left: auto;
   margin-right: 25px;
-  width: 200px;
+  position: relative;
+  width: 250px;
+}
+
+.pushdown {
+  animation: glow;
+  background-color: black;
+  border-style: solid;
+  bottom: 0;
+  padding: 5px;
+  position: absolute;
+  width: inherit;
 }
 
 .row {
