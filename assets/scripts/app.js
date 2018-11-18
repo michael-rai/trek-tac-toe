@@ -22,41 +22,40 @@ $(() => {
       if (grid[i][0] !== ' ' &&
          grid[i][0] === grid[i][1] &&
          grid[i][0] === grid[i][2]) {
-        // return grid[i][0]
-
-        // check vertical
-        for (let j = 0; j < 3; j++) {
-          if (grid[0][j] !== ' ' &&
+        return grid[i][0]
+} else
+      // check vertical
+       for (let j = 0; j < 3; j++) {
+        if (grid[0][j] !== ' ' &&
           grid[0][j] === grid [1][j] &&
           grid[0][j] === grid [2][j]) {
-           // return grid [0][j]
-        //  }
-    //   }
-
-         // check diagonal-top left bottom right
-           if (grid[0][0] !== ' ' &&
-           grid[0][0] === grid [1][1] &&
-           grid[0][0] === grid [2][2]) {
-      //      return grid [0][0]
+           return grid [0][j]
           }
-
+       } elsif
+         // check diagonal-top left bottom right
+           (grid[0][0] !== ' ' &&
+           grid[0][0] === grid [1][1] &&
+           grid[0][0] === grid [2][2])
+            return grid [0][0]
+          } elseif
           //check diagonal-bottom left top right
-          if (grid[2][0] !== ' ' &&
+         (grid[2][0] !== ' ' &&
           grid[2][0] === grid [1][1] &&
-          grid[2][0] === grid [0][2]) {
-      //     return grid [2][0]
+          grid[2][0] === grid [0][2])
+           return grid [2][0]
          }
 
-         for (var i = 0; i < 3; i++) {
-           for (var j = 0; j < 3; j++){
+         for (let i = 0; i < 3; i++) {
+           for (let j = 0; j < 3; j++){
              if (grid[i][j] === ' ') {
                return false;
              }
            }
          }
-       return null;
-  }
-    function moveAi() {
+       return null
+
+
+    const moveAi = function() {
       for (var i = 0; i < 3; i++) {
         for (var j = 0; j < 3; j++){
           if (grid[i][j] === ' ') {
@@ -69,7 +68,7 @@ $(() => {
       }
       return null;
       }
-
+      // actually click function below:
       $('.col').click(function () {
         $(this).html(userToken)
         const i = $(this).data('i')
@@ -95,4 +94,4 @@ $(() => {
       )
     }
   }
-})
+)
