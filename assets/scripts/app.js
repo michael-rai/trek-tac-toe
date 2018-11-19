@@ -4,13 +4,19 @@
 
 const userToken = 'X'
 // const oppToken = 'Y'
+// const showGame = function () {
+//   document.getElementByClass('container').setAttribute('hidden', 'false')
+// }
 
 $(() => {
   console.log('js is running')
   // $('#signUpFormModal').on('submit', events.onSignUp)
   // $('#loginInFormModal').on('submit', events.onSignIn)
+  // after sucessfully signing up/in the game will show..for now i will use a click event on enlist/take Off
+  // $('#ready').click(showGame)
 
   // the following code can be attributed to Cody Seibert via Youtube at https://www.youtube.com/watch?v=ra2_rKV0mDE
+
   const grid = [
     [' ', ' ', ' '],
     [' ', ' ', ' '],
@@ -91,7 +97,6 @@ $(() => {
 //       alert('game over: ' + gameState)
 //     }
 //   }
-//     //  $('#testToggle').close(function () {
-//     //    $('.container').toggle()
+//
 //   )
 // }
