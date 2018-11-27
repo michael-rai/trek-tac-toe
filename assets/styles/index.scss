@@ -21,7 +21,7 @@ $col-color: #fff;
 $modal-color: #000;
 
 .body {
-  background-image: url('assets/pics/stbg.jpg');
+  background-image: url('public/stbg.jpg');
   background-size: cover;
 }
 
@@ -36,7 +36,7 @@ $modal-color: #000;
 }
 
 .score-keeper {
-  background-image: url('assets/pics/stlogo.jpeg');
+  background-image: url('public/stlogo.jpeg');
   background-size: auto;
   border-color: $divcolor;
   border-style: outset;
@@ -52,7 +52,7 @@ $modal-color: #000;
 }
 
 .score-keeper2 {
-  background-image: url('assets/pics/picard.jpg');
+  background-image: url('public/picard.jpg');
   background-size: auto;
   border-color: $divcolor;
   border-style: outset;
@@ -150,5 +150,5 @@ $modal-color: #000;
 }
 
 .modal-content {
-  background-image: url('assets/pics/metalbg.jpg');
+  background-image: url('public/metalbg.jpg');
 }
