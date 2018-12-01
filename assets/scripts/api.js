@@ -8,7 +8,7 @@
 //   })
 // }
 
-// const config = require('./config.js')
+const config = require('./config.js')
 // const store = require('./store.js')
 
 // const createGame = function () {
@@ -47,21 +47,7 @@
 //   )
 // }
 //
-// const signIn = data => {
-//   return $.ajax({
-//     url: config.apiUrl + '/sign-in',
-//     method: 'POST',
-//     data: {
-//       'credentials': {
-//         'email': `${EMAIL}`,
-//         'password':`${PASSWORD}`
-//       }
-//     }
-//   }
-//   )
-// }
 
-<<<<<<< HEAD
 const signUp = data => {
   return $.ajax({
     url: config.apiUrl + '/sign-up',
@@ -81,13 +67,13 @@ const signIn = data => {
 }
 
 module.exports = {
-  onSignUpFromApi,
+  // onSignUpFromApi,
   signUp,
-  signIn,
-  createGame,
-  patchMove
+  signIn
+  // createGame,
+  // patchMove
 }
-=======
+
 // module.exports = {
 //   // onSignUpFromApi,
 //   signUp,
@@ -95,4 +81,3 @@ module.exports = {
 //   // createGame,
 //   // patchMove
 // }
->>>>>>> development

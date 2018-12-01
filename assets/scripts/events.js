@@ -3,8 +3,8 @@ const api = require('./api.js')
 const ui = require('./ui.js')
 
 const onSignUp = event => {
-  console.log('success')
   event.preventDefault()
+  console.log('success')
   const data = getFormFields(event.target)
   // take this data and send to our server post to api must have token
   // using an http request
@@ -14,8 +14,8 @@ const onSignUp = event => {
 }
 
 const onSignIn = event => {
-  console.log('success')
   event.preventDefault()
+  console.log('success')
   const data = getFormFields(event.target)
   // take this date and send to our server
   // data = {

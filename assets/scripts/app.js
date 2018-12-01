@@ -1,6 +1,6 @@
 'use strict'
 
-// const events = require('./events')
+const events = require('./events.js')
 
 const userToken = 'X'
 // const oppToken = 'Y'
@@ -10,8 +10,8 @@ const userToken = 'X'
 
 $(() => {
   console.log('js is running')
-  // $('#signUpFormModal').on('submit', events.onSignUp)
-  // $('#loginInFormModal').on('submit', events.onSignIn)
+  $('#signUpFormModal').on('submit', events.onSignUp)
+  $('#loginInFormModal').on('submit', events.onSignIn)
   // after sucessfully signing up/in the game will show..for now i will use a click event on enlist/take Off
   // $('#ready').click(showGame)
 
