@@ -27,19 +27,19 @@
 </div>
 
 <!-- just add "hidden inside score keepers, container and purge button"-->
-<aside class="score-keeper" hidden>
+<aside class="score-keeper" id="score-keeper" hidden>
   <div class="pushdown">
   <h5 class="lime">Starfleet: <br> U.S.S. Enterprise</h5>
 </div>
 </aside>
 
-<aside class="score-keeper2" hidden>
+<aside class="score-keeper2" id="score-keeper2" hidden>
   <div class="pushdown">
   <h5 class="lime"><span>Captain Picard:</span> <br> "Engage!"</h5>
 </div>
 </aside>
 
-<div class="container" hidden>
+<div class="container" id="container" hidden>
   <div class="row">
     <div class="col" data-i=0 data-j=0></div>
     <div class="col" data-i=0 data-j=1></div>
@@ -64,11 +64,11 @@
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Welcome To Starfleet!</h5>
               <button type="button" id="testToggle" class="close" data-dismiss="modal"><span>&times;</span></button>
-              <h2 id="message1"></h2>
+              <p id="message1"></p>
             </div>
             <div class="modal-body">
 
-              <form class ="SignUp" id="SignUpFormModal"  role="form">
+              <form class ="SignUp" id="signUpFormModal"  role="form">
                 <div class="form-group">
                 <label for="usrname">Username</label>
                   <input type="text" class="form-control" name="credentials[email]" placeholder="Enter your email">
@@ -85,7 +85,7 @@
 
             <form class ="login" id="loginFormModal" role="form">
               <div class="form-group">
-                <h2 id="message2"></h2>
+                <p id="message2"></p>
               <label for="usrname">Username</label>
                 <input type="text" class="form-control" name="credentials[email]" placeholder="Enter your email">
               </div>
@@ -104,7 +104,7 @@
           </div>
         </div>
       </div>
-      <div class="btn-down" hidden>
+      <div class="btn-down" id="btn-down" hidden>
       <button type="reset" class="btn btn-primary">Purge Warp Engines!</button>
       </div>
     </header>

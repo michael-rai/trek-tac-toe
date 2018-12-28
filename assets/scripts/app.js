@@ -11,7 +11,7 @@ const userToken = 'X'
 $(() => {
   console.log('js is running')
   $('#signUpFormModal').on('submit', events.onSignUp)
-  $('#loginInFormModal').on('submit', events.onSignIn)
+  $('#loginFormModal').on('submit', events.onSignIn)
   // after sucessfully signing up/in the game will show..for now i will use a click event on enlist/take Off
   // $('#ready').click(showGame)
 

@@ -4,7 +4,7 @@ const ui = require('./ui.js')
 
 const onSignUp = event => {
   event.preventDefault()
-  console.log('success')
+  console.log('running sign up even')
   const data = getFormFields(event.target)
   // take this data and send to our server post to api must have token
   // using an http request
@@ -15,7 +15,7 @@ const onSignUp = event => {
 
 const onSignIn = event => {
   event.preventDefault()
-  console.log('success')
+  console.log('running sign in event')
   const data = getFormFields(event.target)
   // take this date and send to our server
   // data = {
@@ -32,7 +32,7 @@ const onSignIn = event => {
     .catch(ui.signInFailure)
 }
 
-module.export = {
+module.exports = {
   onSignUp,
   onSignIn
 }

@@ -11,26 +11,27 @@ const signUpSuccess = data => {
 const signUpFailure = data => {
   $('#message1').text('Sign up unsucessful')
   $('#message1').removeClass()
-  $('#message1').addClass('sucess')
+  $('#message1').addClass('sign up failure')
   console.error('signUpFailure ran. Error is: ', data)
 }
 
 const signInSuccess = data => {
   // store.user = data.user
+  $('#exampleModal').modal('toggle')
   document.getElementById('score-keeper').hidden = false
   document.getElementById('score-keeper2').hidden = false
   document.getElementById('container').hidden = false
   document.getElementById('btn-down').hidden = false
   $('#message2').text('Signed in successful')
   $('#message2').removeClass()
-  $('#message2').addClass('sucess')
+  $('#message2').addClass('sign in success')
   console.log('signInSuccess ran. data is : ', data)
 }
 
 const signInFailure = data => {
-  $('#message2').text('Sign in unsucessful')
+  $('#message2').text('Sign in unsuccessful')
   $('#message2').removeClass()
-  $('#message2').addClass('sucess')
+  $('#message2').addClass('sign infailure')
   console.error('signInFailure ran. Error is: ', data)
 }
 module.exports = {

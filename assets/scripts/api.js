@@ -66,14 +66,6 @@ const signIn = data => {
   )
 }
 
-module.exports = {
-  // onSignUpFromApi,
-  signUp,
-  signIn
-  // createGame,
-  // patchMove
-}
-
 // module.exports = {
 //   // onSignUpFromApi,
 //   signUp,
@@ -81,3 +73,11 @@ module.exports = {
 //   // createGame,
 //   // patchMove
 // }
+
+module.exports = {
+  // onSignUpFromApi,
+  signUp,
+  signIn
+  // createGame,
+  // patchMove
+}
