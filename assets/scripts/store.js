@@ -1,7 +1,8 @@
 'use strict'
 
 const store = {
-  const user = {}
+  user: {}
+
 }
 
 module.exports = store

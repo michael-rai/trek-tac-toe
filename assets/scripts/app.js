@@ -12,6 +12,9 @@ $(() => {
   console.log('js is running')
   $('#signUpFormModal').on('submit', events.onSignUp)
   $('#loginFormModal').on('submit', events.onSignIn)
+  $('#sign-out').click(events.onSignOut)
+  $('#pwControlOpen').click(events.onPwControls)
+  $('#gameHistory').click(events.onGameHistory)
   // after sucessfully signing up/in the game will show..for now i will use a click event on enlist/take Off
   // $('#ready').click(showGame)
 

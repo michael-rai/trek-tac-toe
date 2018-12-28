@@ -24,16 +24,16 @@
 <!--Nav BAR -->
 <ul class="nav nav-pills nav-fill" id="navbar" hidden>
   <li class="nav-item">
-    <a class="nav-link " href="#">Password Controls</a>
+    <a class="nav-link " href="#" id="pwControlOpen">Password Controls</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Show Game History</a>
+    <a class="nav-link" href="#" id="gameHistory">Show Game History</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Link</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Dock Ship</a>
+    <a class="nav-link" href="#" id="sign-out">Dock Ship</a>
   </li>
 </ul>
 
@@ -76,7 +76,7 @@
   </div>
 </div>
 
-
+<!-- login/signup modal -->
       <div class="modal fade" id="exampleModal">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -122,6 +122,59 @@
           </div>
         </div>
       </div>
+
+<!-- pw control modal -->
+<div class="modal fade" id="pwControl">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="changePwModal">Change password</h5>
+        <button type="button" id="testToggle2" class="close" data-dismiss="modal"><span>&times;</span></button>
+        <p id="message1"></p>
+      </div>
+      <div class="modal-body">
+
+        <form class ="SignUp" id="signUpFormModal"  role="form">
+          <div class="form-group">
+          <label for="usrname">Username</label>
+            <input type="text" class="form-control" name="credentials[email]" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="psw">Password</label>
+            <input type="password" class="form-control" name="credentials[password]" placeholder="Enter your password">
+            <input type="password" class="form-control" name="credentials[password_confirmation]" placeholder="confirm your password">
+          </div>
+        <div class="form-button">
+        <button type="submit" class="btn btn-primary signup">Upload New Protocol!</button>
+      </div>
+      </form>
+
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- game history -->
+
+<div class="modal fade" id="gameHistoryModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="changePwModal">Battle History</h5>
+        <button type="button" id="testToggle2" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+
       <div class="btn-down" id="btn-down" hidden>
       <button type="reset" class="btn btn-primary">Purge Warp Engines!</button>
       </div>
