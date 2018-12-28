@@ -22,7 +22,10 @@ const signInSuccess = data => {
   document.getElementById('score-keeper2').hidden = false
   document.getElementById('container').hidden = false
   document.getElementById('btn-down').hidden = false
-  $('#message2').text('Signed in successful')
+  document.getElementById('navbar').hidden = false
+  $('#message2').fadeIn(500)
+  $('#message2').text('Signed in successfully')
+  $('#message2').fadeOut(4000)
   $('#message2').removeClass()
   $('#message2').addClass('sign in success')
   console.log('signInSuccess ran. data is : ', data)

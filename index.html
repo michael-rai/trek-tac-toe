@@ -16,10 +16,29 @@
     </head>
     <body class="body">
 
-      <header>
+
       <h1 class='title'><span>Trek-Tac-Toe</span></h1>
       <h5 class='subtitle'> A Star-Trek Themed Game </h5>
 <!--review cod for labeling issue -->
+
+<!--Nav BAR -->
+<ul class="nav nav-pills nav-fill" id="navbar" hidden>
+  <li class="nav-item">
+    <a class="nav-link " href="#">Password Controls</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Show Game History</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Dock Ship</a>
+  </li>
+</ul>
+
+  <!-- status alerts -->
+  <div class="alert alert-dark" role="alert" id="message2" style="display: none"></div>
 
 <div class="form-button">
 <button type="button" class="btn btn-primary" data-toggle="modal"
@@ -85,7 +104,6 @@
 
             <form class ="login" id="loginFormModal" role="form">
               <div class="form-group">
-                <p id="message2"></p>
               <label for="usrname">Username</label>
                 <input type="text" class="form-control" name="credentials[email]" placeholder="Enter your email">
               </div>
@@ -107,6 +125,5 @@
       <div class="btn-down" id="btn-down" hidden>
       <button type="reset" class="btn btn-primary">Purge Warp Engines!</button>
       </div>
-    </header>
     </body>
 </html>
